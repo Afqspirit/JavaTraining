@@ -1,0 +1,21 @@
+package com.Quicksort;
+
+class QSDemo {
+    public static void main(String args[]) {
+        char a[] = { '1'-1, 'x', '3', 'r', 'p', '0', '5' };
+        int i;
+
+        System.out.print("Original array: ");
+        for(i=0; i < a.length; i++)
+            System.out.print(a[i]);
+
+        System.out.println();
+
+        // now, sort the array
+        Quicksort.qsort(a);
+
+        System.out.print("Sorted array: ");
+        for(i=0; i < a.length; i++)
+            System.out.print(a[i]);
+    }
+}
